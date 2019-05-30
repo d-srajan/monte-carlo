@@ -1,3 +1,5 @@
+# estimate value of pi using monte carlo method
+
 import random
 
 iterations = 1
