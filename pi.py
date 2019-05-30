@@ -1,16 +1,21 @@
 import random
 
+iterations = 1
 
-circle = 0
-total = 0
+while True:
+   if iterations > 10000000:
+       break
 
-for i in range(10000):
-    x = random.random()
-    y = random.random()
+   iterations = iterations * 10
+   circle = 0
+   total = 0
 
-    # print(str(x) + ', ' + str(y))
-    total = total + 1
-    if (x*x + y*y) <= 1: 
-        circle = circle + 1
+   for i in range(iterations):
+       x = random.random()
+       y = random.random()
 
-print("pie ~ " + str(4*(circle/total)))
+       total = total + 1
+       if (x*x + y*y) <= 1:
+           circle = circle + 1
+
+   print("for " + str(iterations) + " iterations, pie ~ " + str(4*(circle/total)))
