@@ -1,4 +1,9 @@
 # estimate value of pi using monte carlo method
+#
+# Why does this work?
+# A quarter circle of radius 1 has area π/4, while the unit square has area 1.
+# The probability that a random point in the unit square falls inside the 
+# quarter circle equals π/4. So if we multiply that probability by 4, we get π.
 
 import random
 

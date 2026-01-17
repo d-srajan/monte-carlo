@@ -1,4 +1,8 @@
 # estimate the probability of heads over several coin tosses using monte carlo method
+#
+# Why does this work?
+# By the Law of Large Numbers, the sample proportion of heads converges to the 
+# true probability as the number of trials increases. For a fair coin, this is 0.5.
 
 import random
 
