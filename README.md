@@ -23,12 +23,18 @@ Generates random points in a unit square and checks if they fall inside a quarte
 
 Counts how many uniform random numbers (between 0 and 1) are needed to sum past 1. The expected count equals e — a result related to the Poisson and exponential distributions.
 
+### 4. Golden Ratio (`golden-ratio.py`)
+**Estimates:** φ ≈ 1.61803...
+
+Uses Fibonacci-like sequences with random starting values. The ratio of consecutive terms in any Fibonacci-like sequence converges to the golden ratio φ. Interestingly, this simulation converges faster than π or e because the Fibonacci ratio itself converges exponentially fast (after ~30 steps, it's already accurate to many decimal places).
+
 ## Running the Simulations
 
 ```bash
 python3 fair-coin-toss.py
 python3 pi.py
 python3 eulers-number.py
+python3 golden-ratio.py
 ```
 
 Each simulation runs with increasing iterations (10 → 10,000,000) to show how the estimates converge to the true values.
