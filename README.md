@@ -28,6 +28,11 @@ Counts how many uniform random numbers (between 0 and 1) are needed to sum past 
 
 Uses Fibonacci-like sequences with random starting values. The ratio of consecutive terms in any Fibonacci-like sequence converges to the golden ratio φ. Interestingly, this simulation converges faster than π or e because the Fibonacci ratio itself converges exponentially fast (after ~30 steps, it's already accurate to many decimal places).
 
+### 5. Natural Log of 2 (`ln2.py`)
+**Estimates:** ln(2) ≈ 0.69315...
+
+Generates random points in a unit square and checks if they fall below the curve y = 1/(1+x). The area under this curve from 0 to 1 equals ln(2), so the fraction of points below the curve converges to the true value. This uses Monte Carlo integration — the same geometric approach as the π estimation.
+
 ## Running the Simulations
 
 ```bash
@@ -35,6 +40,7 @@ python3 fair-coin-toss.py
 python3 pi.py
 python3 eulers-number.py
 python3 golden-ratio.py
+python3 ln2.py
 ```
 
 Each simulation runs with increasing iterations (10 → 10,000,000) to show how the estimates converge to the true values.
